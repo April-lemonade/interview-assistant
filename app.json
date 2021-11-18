@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/formwork/formwork",
     "pages/message/message",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/articleDetail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
