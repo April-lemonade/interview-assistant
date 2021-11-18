@@ -1,0 +1,12 @@
+{
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zfhwang",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.9.2"
+  }
+}

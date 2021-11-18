@@ -1,0 +1,17 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+/* 变量 主题颜色 */
+page {
+  --themeColor: rgb(240, 245, 248); 
+  background-color: var(--themeColor);
+}
+
+@import "./styles/iconfont.wxss";
+@import "./miniprogram_npm/@vant/weapp/common/index.wxss";
