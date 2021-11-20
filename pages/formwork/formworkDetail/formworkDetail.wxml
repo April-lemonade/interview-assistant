@@ -1,0 +1,7 @@
+<!--pages/formworkDetail/formworkDetail.wxml-->
+<view class="container">
+  <image mode="widthFix" src="{{obj.url}}" />
+  <view style="align-items:center;margin:5%">
+    <van-button bindtap="fillFormwork" type="primary">使用模板</van-button>
+  </view>
+</view>

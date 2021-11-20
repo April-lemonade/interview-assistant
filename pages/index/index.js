@@ -56,7 +56,7 @@ Page({
     var obj = JSON.stringify(e.currentTarget.dataset.obj);
     wx.navigateTo({
       // url: "/pages/articleDetail/index?title="+e.currentTarget.dataset.title+"&date="+e.currentTarget.dataset.date+"&from="+e.currentTarget.dataset.from+"&id="+e.currentTarget.dataset.id
-      url: "/pages/articleDetail/articleDetail?obj="+encodeURIComponent(obj)
+      url: "/pages/index/articleDetail/articleDetail?obj="+encodeURIComponent(obj)
   })
   }
 })

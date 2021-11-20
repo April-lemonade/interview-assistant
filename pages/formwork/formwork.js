@@ -36,7 +36,7 @@ Page({
     console.log(e.currentTarget.dataset)
     var obj = JSON.stringify(e.currentTarget.dataset.obj);
     wx.navigateTo({
-      url: "/pages/formworkDetail/formworkDetail?obj="+encodeURIComponent(obj)
+      url: "/pages/formwork/formworkDetail/formworkDetail?obj="+encodeURIComponent(obj)
   })
   }
 })
