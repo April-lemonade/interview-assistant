@@ -1,12 +1,14 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/profile/profile",
     "pages/formwork/formwork",
     "pages/message/message",
-    "pages/profile/profile",
     "pages/articleDetail/articleDetail",
     "pages/formworkDetail/formworkDetail",
-    "pages/fillFormwork/fillFormwork"
+    "pages/fillFormwork/fillFormwork",
+    "pages/message/community/community",
+    "pages/message/specialist/specialist"
   ],
   "window": {
     "backgroundTextStyle": "light",

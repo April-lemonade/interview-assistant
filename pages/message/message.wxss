@@ -1,1 +1,53 @@
 /* pages/message/message.wxss */
+.body {
+  margin-top: 20rpx;
+}
+
+.cell {
+  background-color: #fff;
+  margin: 16rpx auto;
+  padding: 24rpx;
+}
+.cell .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 6rpx;
+}
+.cell .outline {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+.cell .info {
+  margin-top: 18rpx;
+  font-size: 26rpx;
+  color: #939192;
+}
+
+.spe-cell {
+  position: relative;
+  display: flex;
+  margin: 16rpx 24rpx;
+  background-color: #fff;
+  align-items: center;
+  border-radius: 14rpx;
+  padding: 20rpx;
+}
+
+.spe-cell image {
+  width: 94rpx;
+  height: 94rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.spe-cell .from {
+  margin-top: 8rpx;
+  font-size: 26rpx;
+  color: rgb(105, 105, 105);
+}
+
+.spe-cell .expert {
+  margin-top: 8rpx;
+  font-size: 26rpx;
+  color: rgb(158, 158, 158);
+}

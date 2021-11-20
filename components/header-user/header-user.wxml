@@ -1,0 +1,4 @@
+<view class="header-user">
+  <image class="avatar" style="width: {{sideLen}};height: {{sideLen}};" src="{{avatarUrl}}" />
+  <text class="nickname"style="font-size: {{fontSize}};font-weight: {{isBold?'bold':'normal'}};" >{{text}}</text>
+</view>

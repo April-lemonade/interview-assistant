@@ -1,0 +1,12 @@
+.header-user {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  border-radius: 50%;
+}
+.nickname {
+  margin-left: 12rpx;
+  text-align: center;
+  line-height: 60rpx;
+}

@@ -1,0 +1,67 @@
+<scroll-view bind:scroll="onScroll" scroll-y id="scroller" class="answer">
+  <van-sticky scroll-top="{{ scrollTop }}" offset-top="{{ offsetTop }}">
+    <!-- 问题区域 -->
+    <view class="question">
+      <view class="title">{{title}}</view>
+      <view class="info">
+        <text>{{answerCnt}}个回答 · </text>
+        <text>{{followerCnt}}关注</text>
+        <van-icon name="arrow" />
+      </view>
+    </view>
+  </van-sticky>
+  <!-- 回答区域 -->
+  <view style="padding: 26rpx;">
+    <view class="author">
+      <header-user side-len="60rpx" font-size="27rpx" text="{{author}}" />
+      <van-button icon="plus" round type="info" size="mini">关注</van-button>
+    </view>
+    <text decode="{{true}}" class="content">{{content}}</text>
+    <view class="time">发布于 07-05 10:12</view>
+    <!-- 评论区 -->
+    <view class="comments">
+      <text class="title">评论 2</text>
+      <view class="com-bar">
+        <image src="https://img.yzcdn.cn/vant/cat.jpeg" />
+        <input type="text" placeholder="写下你的评论..."/>
+      </view>
+
+      <view class="com-user" wx:for="{{commentList}}">
+        <image src="{{item.avatarUrl}}" />
+        <view class="user-content">
+          <view class="nickname">{{item.nickname}}</view>
+          <view style="font-weight: normal;margin-top: 10rpx;">{{item.comment}}</view>
+          <view class="date-ope">
+            <view class="date">{{item.date}}</view>
+            <view class="ope">
+              <van-icon name="chat-o" color="#939192" custom-style="margin-right: 26rpx" size="36rpx" />
+              <van-icon name="good-job-o" color="#939192" size="36rpx" />
+              <text style="font-size: 28rpx;font-weight: normal;color: #939192;margin-left: 4rpx;">{{item.thumbCnt}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</scroll-view>
+
+<!-- 底部操作栏 -->
+<view class="operations">
+  <van-button icon="edit" round type="info" size="small">写回答</van-button>
+  <!-- <view class="icons">
+    <view wx:for="{{operationList}}">
+      <van-icon name="{{item.icon}}" size="50rpx" />
+      <view>{{item.count}}</view>
+    </view>
+  </view> -->
+  <view class="follow">
+    <van-icon name="like-o" size="50rpx" />
+    <view>关注问题</view>
+  </view>
+</view>
+
+<!-- 下一篇文章悬浮按钮 -->
+<view class="arrow">
+  <van-icon name="arrow-down" size="50rpx" />
+</view>

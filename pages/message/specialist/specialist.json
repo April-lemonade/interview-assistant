@@ -1,6 +1,7 @@
 {
   "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
     "header-user": "/components/header-user/header-user",
-    "van-cell": "@vant/weapp/cell/index"
+    "van-icon": "@vant/weapp/icon/index"
   }
 }
