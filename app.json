@@ -1,12 +1,12 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/formwork/fillFormwork/fillFormwork",
+    "pages/message/message",
     "pages/profile/profile",
     "pages/formwork/formwork",
-    "pages/message/message",
-    "pages/articleDetail/articleDetail",
-    "pages/formworkDetail/formworkDetail",
-    "pages/fillFormwork/fillFormwork",
+    "pages/formwork/formworkDetail/formworkDetail",
+    "pages/index/articleDetail/articleDetail",
     "pages/message/community/community",
     "pages/message/specialist/specialist"
   ],

@@ -1,0 +1,56 @@
+.container {
+  margin: 2%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+} 
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 50rpx;
+  margin-bottom: 5%;
+}
+
+.article_info {
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.author {
+  text-align: center;
+  margin-top: 1%;
+  margin-left: 3%;
+}
+
+.article_time {
+  font-size: 28rpx;
+  color: gray;
+}
+
+.article_content {
+  width: 100%;
+  margin-bottom: 20%;
+}
+.bottom {
+  border-top: solid 2rpx gray;
+  overflow:hidden;
+	margin-bottom:0;
+	background:#f0eff5;
+	width:100%;
+	position:fixed;
+	bottom:0px;
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-end;
+}
+
+.icon {
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+

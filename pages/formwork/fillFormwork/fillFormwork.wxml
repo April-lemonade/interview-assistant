@@ -1,0 +1,72 @@
+<!--pages/fillFormwork/fillFormwork.wxml-->
+<view class="container">
+  <view class="edit">
+    <view class="editTitle">修改信息
+      <van-icon size="20" name="edit" />
+    </view>
+  </view>
+  <view class="img">
+    <van-image style="margin-top:10%;margin-bottom:2%" round width="5rem" height="5rem"
+      src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    <view style="margin-bottom:8%">小白</view>
+  </view>
+  <view class="basic">
+    <view class="title">
+      <view class="line"></view>
+      <view class="titleText">基本信息</view>
+    </view>
+    <van-cell title="性别" value="女" />
+    <van-cell title="最高学历" value="本科" />
+    <van-cell title="工作年限" value="5年" />
+    <van-cell title="出生年月" value="2000年5月4日" />
+    <van-cell title="所在城市" value="杭州" />
+    <van-cell title="手机" value="12345678910" />
+    <van-cell title="邮箱" value="123456@qq.com" />
+    <van-cell title="一句话介绍" value="我很棒" />
+  </view>
+
+  <view class="basic">
+    <view class="title">
+      <view class="line"></view>
+      <view class="titleText">工作经历</view>
+
+    </view>
+    <view class="content">1.普通公司<br />2.大厂</view>
+  </view>
+
+  <view class="basic">
+    <view class="title">
+      <view class="line"></view>
+      <view class="titleText">教育经历</view>
+    </view>
+    <view class="content">1.浙江工商大学 本科<br />2.清华大学 硕士</view>
+  </view>
+
+  <view class="basic">
+    <view class="title">
+      <view class="line"></view>
+      <view class="titleText">项目经历</view>
+    </view>
+    <view class="content">……</view>
+  </view>
+
+  <view class="basic">
+    <view class="title">
+      <view class="line"></view>
+      <view class="titleText">技能评价</view>
+    </view>
+    <view class="content">………………</view>
+  </view>
+
+  <view class="basic">
+    <view class="title">
+      <view class="line"></view>
+      <view class="titleText">期望工作</view>
+    </view>
+    <view class="content">产品助理</view>
+  </view>
+<view class="buttons">
+  <van-button style="margin-top:5%;width:250rpx;height:80rpx" type="info">评价与修正</van-button>
+  <van-button style="margin-top:3%;width:250rpx;height:80rpx" type="info">导出</van-button>
+</view>
+</view>
