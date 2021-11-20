@@ -1,2 +1,35 @@
-<!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<view class="body">
+  <van-tabs active="{{ 0 }}">
+
+    <!-- 社友交流社区 -->
+    <van-tab title="社友">
+      <navigator class="cell" wx:for="{{articleList}}" wx:key="title" url="./community/community">
+        <view class="title">{{item.title}}</view>
+        <header-user side-len="46rpx" font-size="24rpx" text="{{item.nickName}}" avatar-url="{{item.avatarUrl}}" is-bold="{{false}}"/>
+        <view class="van-multi-ellipsis--l2 outline">{{item.outline}}</view>
+        <view class="info">
+          <text>{{item.approve}}关注 · </text>
+          <text>{{item.comment}}回答</text>
+        </view>
+      </navigator>
+    </van-tab>
+
+    <!-- 专家区 -->
+    <van-tab title="专家">
+      <navigator class="spe-cell" wx:for="{{specialList}}" wx:key="title" url="./specialist/specialist">
+        <image src="{{item.avatarUrl}}" />
+        <view class="info">
+          <view style="font-weight: bold;font-size: 30rpx;">{{item.name}}</view>
+          <view class="from">
+            <text style="margin-right: 14rpx;">{{item.company}}</text>
+            <text>{{item.followerCnt}}人关注</text>
+          </view>
+          <view class="expert">擅长：{{item.experts}}</view>
+        </view>
+        <van-button bind:click="swichFollow" custom-style="position: absolute;top:20rpx;right: 24rpx" round type="{{item.isFollow?'warning':'info'}}" size="mini">
+          {{item.isFollow?"取关":"关注"}}
+        </van-button>
+      </navigator>
+    </van-tab>
+  </van-tabs>
+</view>

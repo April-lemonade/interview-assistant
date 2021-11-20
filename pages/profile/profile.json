@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "header-user": "/components/header-user/header-user",
+    "van-cell": "@vant/weapp/cell/index"
+  }
 }

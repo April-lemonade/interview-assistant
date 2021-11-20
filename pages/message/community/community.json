@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "header-user": "/components/header-user/header-user",
+    "van-button": "@vant/weapp/button/index",
+    "van-sticky": "@vant/weapp/sticky/index"
+  }
+}

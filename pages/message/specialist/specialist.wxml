@@ -1,0 +1,41 @@
+<!-- 个人信息 -->
+<view class="profile">
+  <view class="basic-info">
+    <image src="{{avatarUrl}}" />
+    <view>
+      <view class="name">肖于根</view>
+      <view class="fol-ans">
+        <text>6643人关注</text>
+        <text style="margin-left: 20rpx;">16条回答</text>
+      </view>
+    </view>
+  </view>
+  <van-button custom-class="follow-btn" icon="plus" round type="info" size="small">关注</van-button>
+  <view class="desc">
+    介绍：对如何面试有自身的经验，首席高级面试擅长交流，杭州旭日科技有限公司。
+  </view>
+</view>
+
+<!-- 回答 -->
+<view class="answer">
+  <view class="attrs">
+    <text>回答</text>
+    <view>
+      <text style="color: rgb(54, 54, 54);">按热度</text>
+      <text style="color: rgb(173, 173, 173);" decode="{{true}}">&nbsp;&nbsp;|&nbsp;&nbsp;</text>
+      <text style="color: rgb(170, 170, 170);">按时间</text>
+    </view>
+  </view>
+</view>
+
+<view class="ans-block" wx:for="{{answerList}}">
+  <view class="title">{{item.title}}</view>
+  <header-user side-len="60rpx" font-size="28rpx" text="肖于根" avatar-url="{{avatarUrl}}"/>
+  <view style="font-size: 28rpx;color: rgb(109, 109, 109);margin-top: 18rpx;" class="van-multi-ellipsis--l2">{{item.content}}</view>
+  <view class="operations">
+    <van-icon name="chat-o" size="40rpx" color="rgb(109, 109, 109)" />
+    <text style="margin-right: 30rpx;">{{item.commentCnt}}</text>
+    <van-icon name="like-o" size="38rpx" color="rgb(109, 109, 109)" />
+    <text>{{item.likeCnt}}</text>
+  </view>
+</view>

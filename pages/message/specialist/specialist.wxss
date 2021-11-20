@@ -1,0 +1,88 @@
+.profile {
+  height: 220rpx;
+  padding: 90rpx 30rpx;
+  background-image: url(https://wx4.sinaimg.cn/mw690/007Xd6uogy1gw86f8yuppj30u00eddhc.jpg);
+  background-size: cover;
+}
+
+.basic-info {
+  display: flex;
+  color: #fff;
+}
+
+.basic-info image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.basic-info .name {
+  margin-left: 26rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.basic-info .fol-ans {
+  font-size: 24rpx;
+  margin-left: 26rpx;
+  margin-top: 10rpx;
+}
+
+.follow-btn {
+  float: right;
+  margin-top: -10rpx;
+}
+
+.desc {
+  height: 100rpx;
+  border-radius: 10rpx;
+  margin: 70rpx 20rpx;
+  padding: 30rpx;
+  background-color: #fff;
+  color: gray;
+  font-size: 28rpx;
+  box-shadow: rgba(0, 0, 0, .1) 0px 0px 6rpx 3rpx;
+}
+
+.answer {
+  margin-top: 40rpx;
+  background-color: #fff;
+  padding: 20rpx;
+}
+
+.answer .attrs {
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  color: rgb(114, 114, 114);
+}
+
+.ans-block {
+  padding: 30rpx;
+  padding-bottom: 50rpx;
+  height: 270rpx;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+
+.ans-block .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-top: 16rpx;
+  margin-bottom: 20rpx;
+}
+
+.ans-block .operations {
+  width: min-content;
+  margin-top: 26rpx;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 30rpx;
+  font-size: 28rpx;
+  color: rgb(109, 109, 109);
+}
+
+.ans-block .operations text {
+  margin-left: 10rpx;
+}

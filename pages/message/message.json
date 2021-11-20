@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "header-user": "/components/header-user/header-user",
+    "van-button": "@vant/weapp/button/index"
+  }
 }

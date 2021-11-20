@@ -1,2 +1,21 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<!-- 蓝白背景色 -->
+<view class="header"></view>
+<view class="back"></view>
+<!-- 头像卡片 -->
+<view class="card">
+  <view style="margin-left: 34rpx;">
+    <header-user text=" 小白" />
+  </view>
+  <view class="sum-info">
+    <view class="info-item" wx:for="{{sumList}}" wx:key="title">
+      <text class="value">{{item.value}}</text>
+      <text class="title">{{item.title}}</text>
+    </view>
+  </view>
+</view>
+<!-- 个人信息条目 -->
+<view class="info-bars">
+  <view wx:for="{{barList}}" style="margin-top: {{index==1||index==4?'20rpx':'0'}};" wx:key="title">
+    <van-cell title="{{item.title}}" size="large" icon="{{item.icon}}" is-link url="" />
+  </view>
+</view>

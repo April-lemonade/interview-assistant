@@ -1,1 +1,57 @@
 /* pages/profile/profile.wxss */
+.header {
+  height: 200rpx;
+  width: 100%;
+  background-color: #5290ff;
+}
+.back {
+  height: 200rpx;
+  width: 100%;
+  background-color: #fff;
+}
+.card {
+  position: absolute;
+  top: 80rpx;
+  width: calc(100vw - 100rpx);
+  height: 220rpx;
+  margin: 0 30rpx;
+  background-color: #fff;
+  box-shadow: rgba(0,0,0,.1) 0px 0px 6rpx 3rpx;
+  padding: 30rpx 20rpx;
+  border-radius: 12rpx;
+}
+.sum-info {
+  display: flex;
+  margin: 26rpx auto;
+}
+.sum-info .info-item {
+  flex: 1;
+  position: relative;
+}
+.sum-info .info-item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20rpx;
+  width: 1px;
+  background-color: rgb(209, 209, 209);
+  height: 56rpx;
+}
+.sum-info view:nth-child(3)::after {
+  background-color: #fff;
+}
+.sum-info text {
+  display: block;
+  text-align: center;
+}
+.sum-info .value {
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.sum-info .title {
+  font-size: 30rpx;
+  color: gray;
+}
+.info-bars {
+  margin-top: 24rpx;
+}
