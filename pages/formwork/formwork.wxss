@@ -1,1 +1,28 @@
 /* pages/formwork/formwork.wxss */
+.container {
+  width: 100%;
+  margin: 2%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.framworks{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  justify-content: center;
+}
+
+.framwork {
+width: 40%;
+}
+.framworkImage {
+  width: 100%;
+  border-style: solid;
+  border-width: 1rpx;
+  border-color: gray;
+  border-radius: 10rpx;
+}

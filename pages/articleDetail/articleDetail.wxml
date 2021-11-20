@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="title">{{obj.title}}</view>
+  <view class="article_info">
+    <view>{{obj.from}}</view>
+    <view class="article_time">发布时间:{{obj.date}}</view>
+  </view>
+  <rich-text class="article_content" nodes="{{obj.html}}"></rich-text>
+  <view class="bottom">
+    <van-icon size="20" bindtap="liked" class="icon" color="{{liked? '':'red'}}" name="good-job-o" />
+    <van-icon size="20" bindtap="stared" class="icon" color="{{stared? '':'red'}}" name="star-o" />
+    <van-icon size="20" bindtap="onClick" class="icon" name="share-o" />
+  </view>
+  <van-share-sheet show="{{ showShare }}" title="立即分享给好友" options="{{ options }}" bind:select="onSelect"
+    bind:close="onClose" />
+</view>

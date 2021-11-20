@@ -1,40 +1,22 @@
-// pages/articleDetail/index.js
+// pages/fillFormwork/fillFormwork.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title: '',
-    date: '',
-    from: '',
-    id: 0,
-    url:'',
-    obj: null,
-    articles: [{
-      id: '1',
-      url:"https://news.gmw.cn/2020-12/22/content_34482388.html"
-    }]
+    obj: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options)
-    // this.setData({
-    //   title: options.title,
-    //   date: options.date,
-    //   from: options.from,
-    //   id: options.id,
-    //   url: this.data.articles[options.id].url
-    // })
     var obj = JSON.parse(decodeURIComponent(options.obj))
     this.setData({
-      // title: options.title,
-      // vedios:  vedios
       obj: obj
     })
+    console.log(this.data.obj)
   },
 
   /**
