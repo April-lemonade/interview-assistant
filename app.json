@@ -8,7 +8,9 @@
     "pages/formwork/formworkDetail/formworkDetail",
     "pages/index/articleDetail/articleDetail",
     "pages/message/community/community",
-    "pages/message/specialist/specialist"
+    "pages/profile/myFollow/myFollow",
+    "pages/message/specialist/specialist",
+    "pages/message/initiateQues/initiateQues"
   ],
   "window": {
     "backgroundTextStyle": "light",

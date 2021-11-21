@@ -1,0 +1,19 @@
+.cell {
+  background-color: #fff;
+  margin: 16rpx auto;
+  padding: 24rpx;
+}
+.cell .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 6rpx;
+}
+.cell .outline {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+.cell .info {
+  margin-top: 18rpx;
+  font-size: 26rpx;
+  color: #939192;
+}

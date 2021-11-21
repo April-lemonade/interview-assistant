@@ -3,5 +3,6 @@
     "van-button": "@vant/weapp/button/index",
     "header-user": "/components/header-user/header-user",
     "van-icon": "@vant/weapp/icon/index"
-  }
+  },
+  "navigationBarTitleText": "专家详情"
 }

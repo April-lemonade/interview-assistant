@@ -86,3 +86,15 @@
 .ans-block .operations text {
   margin-left: 10rpx;
 }
+
+.ask-btn {
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  width: 100%;
+  background-color: #25c689;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+  box-shadow: #bdfae0 0px 0px 6rpx 3rpx;
+}

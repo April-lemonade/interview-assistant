@@ -4,5 +4,6 @@
     "header-user": "/components/header-user/header-user",
     "van-button": "@vant/weapp/button/index",
     "van-sticky": "@vant/weapp/sticky/index"
-  }
+  },
+  "navigationBarTitleText": "话题详情"
 }

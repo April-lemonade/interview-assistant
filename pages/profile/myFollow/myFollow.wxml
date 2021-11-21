@@ -1,15 +1,15 @@
 <view class="body">
   <van-tabs active="{{ 0 }}">
 
-    <!-- 社友交流社区 -->
+    <!-- 社友 -->
     <van-tab title="社友">
       <topic-bar wx:for="{{articleList}}" topic="{{item}}" wx:key="title" />
     </van-tab>
 
-    <!-- 专家区 -->
+    <!-- 专家 -->
     <van-tab title="专家">
-      <specialist wx:for="{{specialList}}" specialist="{{item}}" wx:key="name" bind:follow="swichFollow" />
+      <specialist wx:for="{{specialList}}" specialist="{{item}}" wx:key="name" bind:follow="swichFollow"/>
     </van-tab>
-    
+
   </van-tabs>
 </view>

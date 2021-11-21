@@ -1,0 +1,15 @@
+<navigator class="spe-cell" url="/pages/message/specialist/specialist">
+  <image src="{{specialist.avatarUrl}}" />
+  <view class="info">
+    <view style="font-weight: bold;font-size: 30rpx;">{{specialist.name}}</view>
+    <view class="from">
+      <text style="margin-right: 14rpx;">{{specialist.company}}</text>
+      <text>{{specialist.followerCnt}}人关注</text>
+    </view>
+    <view class="expert">擅长：{{specialist.experts}}</view>
+  </view>
+  <van-button catch:tap="swichFollow" custom-style="position: absolute;top:20rpx;right: 24rpx" round
+    type="{{specialist.isFollow?'warning':'info'}}" size="mini">
+    {{specialist.isFollow?"取关":"关注"}}
+  </van-button>
+</navigator>

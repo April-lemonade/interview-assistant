@@ -1,0 +1,39 @@
+page {
+  background-color: #fff;
+}
+.text-area {
+  font-size: 34rpx;
+  padding: 30rpx;
+  height: 100rpx;
+  width: calc(100vw - 60rpx);
+}
+
+.card {
+  margin: 0 40rpx;
+  background-color: #f5f6f8;
+  border-radius: 16rpx;
+  padding: 20rpx;
+  color: #8590a2;
+  font-size: 28rpx;
+}
+.card .title {
+  margin-top: 14rpx;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  margin-bottom: 14rpx;
+  position: relative;
+}
+
+.card .title .close-icon {
+  position: absolute;
+  right: 5rpx;
+  top: -6rpx;
+}
+
+.publish-btn {
+  width: 180rpx;
+  margin-top: 20rpx;
+  margin-left: 50%;
+  transform: translate(-50%,0)
+}

@@ -16,6 +16,6 @@
 <!-- 个人信息条目 -->
 <view class="info-bars">
   <view wx:for="{{barList}}" style="margin-top: {{index==1||index==4?'20rpx':'0'}};" wx:key="title">
-    <van-cell title="{{item.title}}" size="large" icon="{{item.icon}}" is-link url="" />
+    <van-cell title="{{item.title}}" size="large" icon="{{item.icon}}" is-link url="{{item.url}}" />
   </view>
 </view>

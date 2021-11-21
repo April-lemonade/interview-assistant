@@ -28,7 +28,7 @@
   </view>
 </view>
 
-<view class="ans-block" wx:for="{{answerList}}">
+<view class="ans-block" wx:for="{{answerList}}" wx:key="title" >
   <view class="title">{{item.title}}</view>
   <header-user side-len="60rpx" font-size="28rpx" text="肖于根" avatar-url="{{avatarUrl}}"/>
   <view style="font-size: 28rpx;color: rgb(109, 109, 109);margin-top: 18rpx;" class="van-multi-ellipsis--l2">{{item.content}}</view>
@@ -39,3 +39,5 @@
     <text>{{item.likeCnt}}</text>
   </view>
 </view>
+
+<navigator class="ask-btn" url="../initiateQues/initiateQues">发起提问</navigator>

@@ -38,6 +38,7 @@ Page({
     ],
     specialList: [
       {
+        id: 1,
         avatarUrl: "https://itobase-local-life.oss-cn-hangzhou.aliyuncs.com/head/139.jpg",
         name: "肖于根",
         company: "丝泉科技",
@@ -46,6 +47,7 @@ Page({
         isFollow: true
       },
       {
+        id: 2,
         avatarUrl: "https://itobase-local-life.oss-cn-hangzhou.aliyuncs.com/head/170.jpg",
         name: "陈佳丽",
         company: "文华科技",
@@ -54,6 +56,7 @@ Page({
         isFollow: false
       },
       {
+        id: 3,
         avatarUrl: "https://itobase-local-life.oss-cn-hangzhou.aliyuncs.com/head/10.jpg",
         name: "王东海",
         company: "丝泉科技",
@@ -62,6 +65,7 @@ Page({
         isFollow: false
       },
       {
+        id: 4,
         avatarUrl: "https://itobase-local-life.oss-cn-hangzhou.aliyuncs.com/head/25.jpg",
         name: "刘盼盼",
         company: "思涵科技",
@@ -76,7 +80,16 @@ Page({
 
   },
 
-  swichFollow(index) {
-    console.log("index",index)
+  swichFollow(e) {
+    const that = this
+    const specialList = this.data.specialList
+    specialList.forEach((item,index) => {
+      if (item.id == e.detail) {
+        specialList[index].isFollow = !item.isFollow
+        that.setData({
+          specialList
+        })
+      }
+    })
   }
 })

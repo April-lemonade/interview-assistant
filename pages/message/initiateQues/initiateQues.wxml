@@ -1,0 +1,21 @@
+<view class="ask-area">
+    <textarea class="text-area" placeholder="点击输入问题"></textarea>
+  </view>
+
+  <view class="card">
+    <view class="title">
+      <van-icon name="question" custom-style="margin-right: 10rpx;" size="34rpx" />
+      <text>让你的第一个提问获得更多的解答</text>
+      <van-icon name="cross" custom-class="close-icon" />
+    </view>
+    <view>· 保持文字简练，表述清晰问题的关键点</view>
+    <view>· 添加合适的话题，让问题更好地流通</view>
+    <view>· 却八婆问题没有被提问过</view>
+  </view>
+
+  <view class="addition">
+    <textarea class="text-area" style="font-size: 32rpx;color: gainsboro;margin-top: 10rpx;"
+      placeholder="对问题补充说明，可以更快获得解答（选填）"></textarea>
+  </view>
+
+  <van-button round custom-class="publish-btn" size="small" type="info">发布</van-button>

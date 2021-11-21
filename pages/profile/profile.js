@@ -30,7 +30,7 @@ Page({
       {
         title: "我的关注",
         icon: "bell",
-        url: ""
+        url: "./myFollow/myFollow"
       },
       {
         title: "我的模板",

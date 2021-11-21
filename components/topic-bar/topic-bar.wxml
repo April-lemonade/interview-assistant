@@ -1,0 +1,10 @@
+<navigator class="cell" url="/pages/message/community/community">
+  <view class="title">{{topic.title}}</view>
+  <header-user side-len="46rpx" font-size="24rpx" text="{{topic.nickName}}" avatar-url="{{topic.avatarUrl}}"
+    is-bold="{{false}}" />
+  <view class="van-multi-ellipsis--l2 outline">{{topic.outline}}</view>
+  <view class="info">
+    <text>{{topic.approve}}关注 · </text>
+    <text>{{topic.comment}}回答</text>
+  </view>
+</navigator>
